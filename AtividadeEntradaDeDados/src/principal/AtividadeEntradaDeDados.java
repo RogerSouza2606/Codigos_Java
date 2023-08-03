@@ -22,11 +22,13 @@ public class AtividadeEntradaDeDados {
 		System.out.println("\nDigite um segundo número: ");
 		numero2 = leia.nextInt();
 		
-		System.out.println("Digite seu nome: ");
+		System.out.println("\nDigite seu nome: ");
 		nome = leia.nextLine();
+		leia.nextLine();
 		
 		System.out.println("\nDigite seu sobrenome: ");
 		sobrenome = leia.nextLine();
+		
 		
 		System.out.println("Qual o seu genêro (M/F): ");
 		genero = leia.next().charAt(0);
@@ -35,7 +37,7 @@ public class AtividadeEntradaDeDados {
 		
 		System.out.println("\nO segundo número digitado foi: " + numero2);
 		
-		System.out.println("O nome digitado foi: " + nome);
+		System.out.println("\nO nome digitado foi: " + nome);
 		
 		System.out.println("\nO sobrenome digitado foi: " + sobrenome);
 		
