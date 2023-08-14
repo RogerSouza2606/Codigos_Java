@@ -7,28 +7,18 @@ public class NomeNoaMediaAprovadoReprovado {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		String nome;
+		double[] notas = new double [4];
 		
-		double notaBimestral = 0;
-		double media = 0;
-		
-		System.out.println("Digite seu nome: ");
-		nome = sc.nextLine();
-		for(int contador = 1; contador < 5; contador++) {
-			System.out.println("Digite a nota: ");
-			notaBimestral = sc.nextDouble();
-			media = media + notaBimestral;
-		}
-		
-		System.out.println("A média das notas é: " + (media / 4));
-		
-		if(media >= 7) {
-			System.out.println(nome + " foi aprovado! Com a média: " + media / 4);
-		}
-		else {
-			System.out.println(nome + " foi reprovado! com a média: " + media / 4);
-		}
-		
+	    System.out.println("Entre com o nome do aluno: ");
+	    String nome = sc.nextLine();
+	    
+	    for(int contador = 0; contador < notas.length; contador++) {
+	    	System.out.println("Entre com a nota: ");
+	    	notas[contador] = sc.nextDouble();
+	    }
+	    double media = (notas[0] + notas[1] + notas[2] + notas[4]) / 4;
+	    
+	    System.out.printf("A média do %s é: %.2f", nome, media);
     
 		
 		
