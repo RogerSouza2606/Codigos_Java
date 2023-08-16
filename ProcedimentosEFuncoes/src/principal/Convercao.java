@@ -8,11 +8,14 @@ public class Convercao {
 		Scanner sc = new Scanner(System.in);
 System.out.println("Informe o valor em dólares: ");
 		double dolares = sc.nextDouble();
+		
 		System.out.println("Informe o valor em reais: ");
 		double reais = sc.nextDouble();
 		
-		System.out.println("Convertendo: " + reais + " reais para dólares, fica: " + (reais / 5));
-			System.out.println("Convertendo: " + dolares + " dólares para reais fica: " + (dolares * 5));
+		System.out.printf("Valor em dólar é: %.2f", converterParaDolar(reais));
+		
+		System.out.printf("\nValor em real é: %.2f", converterParaReal(dolares));
+			
 		
 			
 		
@@ -24,5 +27,15 @@ System.out.println("Informe o valor em dólares: ");
 	sc.close();
 	}
 
-	
+
+static double converterParaDolar(double reais) {
+	return reais / 4.99;
 }
+static double converterParaReal(double dolar) {
+	return dolar * 4.99;
+}
+		
+	}
+
+	
+
