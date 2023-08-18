@@ -17,12 +17,13 @@ public class MetroQuadrado {
 		
 		
 		System.out.println("Digite o comprimento: ");
-		area.comprimento = sc.nextInt();
+		area.comprimento = sc.nextDouble();
 		System.out.println("Digite a largura: ");
-		area.largura = sc.nextInt();
+		area.largura = sc.nextDouble();
 		
-		System.out.println("O metro quadrado dessa área da: " + (area.comprimento * area.largura));
+		System.out.println("O metro quadrado dessa área é: " + (area.comprimento * area.largura));
 
+		sc.close();
 	}
 
 }
