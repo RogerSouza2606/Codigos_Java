@@ -3,8 +3,8 @@ package entites;
 public class Dados {
 
 	private String nome;
-	private String email;
-	private int senha;
+	private String e_mail;
+	private String senha;
 	public String getNome() {
 		return nome;
 	}
@@ -12,19 +12,20 @@ public class Dados {
 		this.nome = nome;
 	}
 	public String getEmail() {
-		return email;
+		return e_mail;
 	}
 	public void setEmail(String email) {
-		this.email = email;
+		this.e_mail = email;
 	}
-	public int getSenha() {
-		return senha;
-	}
-	public void setSenha(int senha) {
+	public void setSenha(String senha) {
 		this.senha = senha;
 	}
 	
-	
+	public void obterDadosUsuarios() {
+		System.out.println("Nome do usuário: " + nome);
+		System.out.println("e-mail do usuário: " + e_mail);
+		
+	}
 	
 	
 	

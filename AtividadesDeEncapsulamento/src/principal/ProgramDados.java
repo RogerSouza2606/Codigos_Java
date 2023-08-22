@@ -17,8 +17,18 @@ public class ProgramDados {
 		dados.setEmail(sc.nextLine());
 		
 		System.out.println("Informe sua senha: ");
+		dados.setSenha(sc.nextLine());
 		
-		dados.setSenha(sc.nextInt());
+		dados.obterDadosUsuarios();
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 
