@@ -11,7 +11,19 @@ public class program {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Nome do funcionário: ");
-		funcionario.setNome(sc.nectLine());
+		funcionario.setNome(sc.nextLine());
+		
+		System.out.println("Idade do funcionário: ");
+		funcionario.setIdade(sc.nextInt());
+		
+		System.out.println("Salario Bruto: ");
+		funcionario.setSalarioBruto(sc.nextDouble());
+		
+		System.out.println("Salário Bruto + bonificação: " + (funcionario.getSalarioBruto() + funcionario.setBonificacao()));
+		
+		
+		
+		sc.close();
 	}
 
 }

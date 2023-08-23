@@ -5,7 +5,17 @@ public class Funcionario {
 	private String nome;
 	private int idade;
 	protected double salarioBruto;
+	private double bonificacao = 0.05;
 	
+	
+	public double getBonificacao() {
+		return bonificacao;
+	}
+
+
+	public double getSalarioBruto() {
+		return salarioBruto;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -22,8 +32,8 @@ public class Funcionario {
 		this.salarioBruto = salarioBruto;
 	}
 	
-	public void salarioBruto(double bonificacao) {
-	this.salarioBruto += bonificacao;	
+	public void salarioBrutoMaisBonificacao(double bonificacao) {
+	this.salarioBruto += 0.05;	
 	}
 	public void obterDados() {
 		System.out.println("Nome do funcionário: " + nome);
