@@ -1,20 +1,15 @@
 package entities;
 
-public class Funcionario {
+public class funcionario {
 
 	private String nome;
 	private int idade;
 	protected double salarioBruto;
-	private double bonificacao = 0.05;
+	private double bonus;
 	
 	
-	public double getBonificacao() {
-		return bonificacao;
-	}
-
-
-	public double getSalarioBruto() {
-		return salarioBruto;
+	public double getBonus() {
+		return bonus;
 	}
 	public String getNome() {
 		return nome;
@@ -28,21 +23,23 @@ public class Funcionario {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
+	public double getSalarioBruto() {
+		return salarioBruto;
+	}
 	public void setSalarioBruto(double salarioBruto) {
 		this.salarioBruto = salarioBruto;
 	}
 	
-	public void salarioBrutoMaisBonificacao(double bonificacao) {
-	this.salarioBruto += 0.05;	
-	}
-	public void obterDados() {
+	public void obterFuncionario() {
 		System.out.println("Nome do funcionário: " + nome);
-		System.out.println("Idade do funcionário: " + idade);
-		System.out.println("Salario do funcionário: " + salarioBruto);
+		System.out.println("Nome do idade: " + idade);
+		System.out.println("Nome do salário Bruto: " + salarioBruto);
+		System.out.println("Bônus: " + getBonus());
+		System.out.println("Salario atualizado: " + (salarioBruto + getBonus()));
 	}
+
 		
 	}
 	
 	
-	
-
+}
